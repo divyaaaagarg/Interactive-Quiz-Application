@@ -1,0 +1,33 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #172033;
+  background: #f3f6fb;
+  font-synthesis: none;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; padding: 32px 16px; display: grid; place-items: center; }
+.quiz-shell { width: min(100%, 720px); }
+.hero { text-align: center; margin-bottom: 26px; }
+.eyebrow { color: #5368d8; font-size: .78rem; font-weight: 800; letter-spacing: .16em; }
+h1 { margin: 8px 0; font-size: clamp(2rem, 5vw, 3rem); letter-spacing: -.04em; }
+.hero p:last-child { color: #657089; }
+.quiz-card { background: white; padding: clamp(22px, 5vw, 38px); border-radius: 24px; box-shadow: 0 18px 55px #1e315015; }
+.progress-row { display: flex; justify-content: space-between; color: #657089; font-size: .9rem; gap: 12px; }
+.progress-track { height: 8px; background: #e9edf5; border-radius: 99px; overflow: hidden; margin: 14px 0 28px; }
+#progress-bar { height: 100%; width: 0; background: #5368d8; transition: width .25s ease; }
+h2 { font-size: clamp(1.25rem, 3vw, 1.6rem); line-height: 1.4; }
+.answers { display: grid; gap: 12px; margin: 24px 0 12px; }
+.answer { width: 100%; text-align: left; padding: 15px 17px; border: 1px solid #dfe4ef; background: #fff; border-radius: 12px; font: inherit; cursor: pointer; transition: .15s; }
+.answer:hover:not(:disabled), .answer:focus-visible { border-color: #5368d8; background: #f5f6ff; }
+.answer:disabled { cursor: default; }
+.answer.correct { border-color: #219768; background: #eaf8f1; }
+.answer.incorrect { border-color: #d95364; background: #fff0f1; }
+.feedback { min-height: 24px; font-weight: 650; }
+.primary-button, .secondary-button { border: 0; border-radius: 12px; padding: 13px 20px; font: inherit; font-weight: 750; cursor: pointer; }
+.primary-button { background: #5368d8; color: white; }
+.primary-button:disabled { opacity: .45; cursor: not-allowed; }
+.secondary-button { background: #e9edf8; color: #29365b; margin-top: 12px; }
+.result { margin: 20px 0; padding: 18px; border-radius: 14px; background: #f4f6ff; font-size: 1.1rem; }
+.hidden { display: none; }
+footer { text-align: center; color: #8790a3; font-size: .85rem; margin-top: 20px; }
+@media (max-width: 480px) { body { padding: 20px 12px; } .quiz-card { border-radius: 18px; } }
