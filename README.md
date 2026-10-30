@@ -25,4 +25,4 @@ Then open `http://localhost:8000`.
 
 ## Deployment
 This is a static website and can be deployed on GitHub Pages or Vercel:
-- Live website: `https://vercel.com/divyaaaagarg/quiz/H77sVxufMbKpMsgzafEvYnrthBpQ`
+- Live website: `https://quizz-git-main-divyaaaagarg.vercel.app/`
